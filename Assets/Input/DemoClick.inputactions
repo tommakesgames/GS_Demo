@@ -1,0 +1,55 @@
+{
+    "name": "DemoClick",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "e26c58d2-7d70-4656-b0be-46f2206d224e",
+            "actions": [
+                {
+                    "name": "Launch",
+                    "type": "Button",
+                    "id": "c62208de-2f10-43b8-b058-d15e75742957",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3ba0b46-9a81-45d3-82fe-b3d3271efd09",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Launch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee83bc53-e0d6-4538-b335-53bfb7904bdb",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Launch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c82cbf7b-ccc4-44b3-b847-5a1384d222a0",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Launch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
