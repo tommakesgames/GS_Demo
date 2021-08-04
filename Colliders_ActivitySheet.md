@@ -18,7 +18,7 @@ https://github.com/tommakesgames/GS_Demo
   - Play the scene.
 
   ###### 1. What happens?
-  A.
+  A. Cube falls, sphere doesn't.
 
 
 
@@ -75,8 +75,6 @@ https://github.com/tommakesgames/GS_Demo
   A.
 
 
-
-  - Open up 'ballCollision.cs'. (This script is attached to the 'ball' prefab in our example)
   - Select the wall. In the 'Box Collider' component, make sure 'Is Trigger' is ticked/true.
   - Now play the scene.
 
@@ -84,17 +82,18 @@ https://github.com/tommakesgames/GS_Demo
   A.
 
 
-
+  - Open up 'ballCollision.cs' in the 'Scripts' folder. (This script is attached to the 'ball' prefab in our example)
   - In 'ballCollision.cs', in the `OnCollisionEnter` function, uncomment the line `Destroy(collision.gameObject);`.
-  - Make sure 'Is Trigger' for the Box Collider of the wall is now UNticked/false.
+  - Make sure 'Is Trigger' for the Box Collider of the wall is now **UN**ticked/false.
   - Play the scene.
 
   ###### 9. How does the ball react to the wall, even though it's destroyed?
   A.
 
 
-
+  - In 'ballCollision.cs', in the `OnCollisionEnter` function, _COMMENT OUT AGAIN_ the line `Destroy(collision.gameObject);`.
   - In 'ballCollision.cs' in the `OnTriggerEnter` function, uncomment the line `Destroy(other.gameObject);`.
+  - Select the wall. In the 'Box Collider' component, make sure 'Is Trigger' is **ticked/true**.
   - Play the scene.
 
   ###### 10. How does the ball react to the wall (trigger) being destroyed? How is it different from when the wall was a collider?
@@ -115,7 +114,7 @@ Other ways to investigate and experiment with colliders and triggers:
 - 	Create a Physics Material (right click in 'Project' > Create > Physics Material), drag and drop it onto the 'Material' field in the collider. Play with the values of the Physics Material - it's fairly self-explanatory! See how the ball interacts with the wall.
 - Look at the 'ballMovement.cs' script (this is attached the to ball prefab in the Project).
   - Focus on the line `rb.AddForce(forceSpeed * transform.forward, ForceMode.Impulse);`
-  - Investigate the possible values for `ForceMode`, and see how changing it from `Impulse` affects the ball's behaviour. There are four possible values.
+  - Investigate the possible values for `ForceMode`, and see how changing it from `Impulse` affects the ball's behaviour. There are four possible values/force modes.
 
 
 
@@ -143,5 +142,4 @@ A.
 
 
   ###### What do you need to include a trigger in your game (including scripting)?
-  A.	
-
+  A.
