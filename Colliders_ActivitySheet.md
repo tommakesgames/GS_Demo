@@ -10,6 +10,8 @@
 
 This project has two simple scenes which you can use to explore the basic functions of rigibodies, colliders and triggers.
 
+https://github.com/tommakesgames/GS_Demo
+
 ## Colliders and Rigidbodies
 
   - Open up Scene1 (a cube and a sphere positioned over a tilted plane)
